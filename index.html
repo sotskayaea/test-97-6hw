@@ -18,11 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/index.css"
+    />
   </head>
 
   <body>
-   <header class="page-header">
+    <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logotype link logotype-header" href="./index.html"
@@ -42,6 +45,13 @@
             </li>
           </ul>
         </nav>
+
+        <button class="open-mobile-menu-btn">
+          <svg class="open-mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <address>
           <ul class="address-list list">
             <li>
@@ -61,7 +71,7 @@
 
     <main>
       <!--Section 1-->
-    <section class="first-section">
+      <section class="first-section">
         <div class="container first-section-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
@@ -69,7 +79,7 @@
       </section>
 
       <!--Section 2-->
-     <section class="second-section">
+      <section class="second-section">
         <div class="container feature-container">
           <h2 class="visually-hidden">Features</h2>
 
@@ -148,12 +158,13 @@
       </section>
 
       <!--Section 3-->
-     <section class="team-section">
+      <section class="team-section">
         <div class="container team-container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list team-list">
             <li class="team-card">
               <img
+                srcset="./images/markguerro@2x.jpg 2x"
                 src="./images/markguerro.jpg"
                 alt="MarkGuerro"
                 width="264"
@@ -216,6 +227,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/tomford@2x.jpg 2x"
                 src="./images/tomford.jpg"
                 alt="TomFord"
                 width="264"
@@ -278,6 +290,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/camilagarcia@2x.jpg 2x"
                 src="./images/camilagarcia.jpg"
                 alt="CamilaGarcia"
                 width="264"
@@ -340,6 +353,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/danielwilson@2x.jpg"
                 src="./images/danielwilson.jpg"
                 alt="DanielWilson"
                 width="264"
@@ -412,10 +426,17 @@
             <li class="project-card">
               <div class="project-card-wrapper">
                 <img
-                  src="./images/ourportfolio/bankingapp.jpg"
+                  srcset="
+                    ./images/ourportfolio/bankingapp-mobile.jpg    288w,
+                    ./images/ourportfolio/bankingapp-mobile@2x.jpg 576w,
+                    ./images/ourportfolio/bankingapp-tablet.jpg    356w,
+                    ./images/ourportfolio/bankingapp-tablet@2x.jpg 712w,
+                    ./images/ourportfolio/bankingapp.jpg           360w,
+                    ./images/ourportfolio/bankingapp@2x.jpg        720w
+                  "
+                  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/ourportfolio/bankingapp-mobile.jpg"
                   alt="bankingapp"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -431,10 +452,17 @@
             <li class="project-card">
               <div class="project-card-wrapper">
                 <img
-                  src="./images/ourportfolio/cashlesspayment.jpg"
+                  srcset="
+                    ./images/ourportfolio/cashlesspayment-mobile.jpg    288w,
+                    ./images/ourportfolio/cashlesspayment-mobile@2x.jpg 576w,
+                    ./images/ourportfolio/cashlesspayment-tablet.jpg    356w,
+                    ./images/ourportfolio/cashlesspayment-tablet@2x.jpg 712w,
+                    ./images/ourportfolio/cashlesspayment.jpg           360w,
+                    ./images/ourportfolio/cashlesspayment@2x.jpg        720w
+                  "
+                  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/ourportfolio/cashlesspayment-mobile.jpg"
                   alt="cashlesspayment"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -451,10 +479,17 @@
             <li class="project-card">
               <div class="project-card-wrapper">
                 <img
-                  src="./images/ourportfolio/meditationapp.jpg"
+                  srcset="
+                    ./images/ourportfolio/meditationapp-mobile.jpg    288w,
+                    ./images/ourportfolio/meditationapp-mobile@2x.jpg 576w,
+                    ./images/ourportfolio/meditationapp-tablet.jpg    356w,
+                    ./images/ourportfolio/meditationapp-tablet@2x.jpg 712w,
+                    ./images/ourportfolio/meditationapp.jpg           360w,
+                    ./images/ourportfolio/meditationapp@2x.jpg        720w
+                  "
+                  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/ourportfolio/meditationapp-mobile.jpg"
                   alt="meditationapp"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -472,10 +507,17 @@
             <li class="project-card">
               <div class="project-card-wrapper">
                 <img
-                  src="./images/ourportfolio/taxiservice.jpg"
+                  srcset="
+                    ./images/ourportfolio/taxiservice-mobile.jpg    288w,
+                    ./images/ourportfolio/taxiservice-mobile@2x.jpg 576w,
+                    ./images/ourportfolio/taxiservice-tablet.jpg    356w,
+                    ./images/ourportfolio/taxiservice-tablet@2x.jpg 712w,
+                    ./images/ourportfolio/taxiservice.jpg           360w,
+                    ./images/ourportfolio/taxiservice@2x.jpg       720w
+                  "
+                  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/ourportfolio/taxiservice-mobile.jpg"
                   alt="taxiservice"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -492,10 +534,17 @@
             <li class="project-card">
               <div class="project-card-wrapper">
                 <img
-                  src="./images/ourportfolio/screenillustrations.jpg"
+                  srcset="
+                    ./images/ourportfolio/screenillustrations-mobile.jpg    288w,
+                    ./images/ourportfolio/screenillustrations-mobile@2x.jpg 576w,
+                    ./images/ourportfolio/screenillustrations-tablet.jpg    356w,
+                    ./images/ourportfolio/screenillustrations-tablet@2x.jpg 712w,
+                    ./images/ourportfolio/screenillustrations.jpg           360w,
+                    ./images/ourportfolio/screenillustrations@2x.jpg        720w
+                  "
+                  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/ourportfolio/screenillustrations-mobile.jpg"
                   alt="screenillustrations"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -512,10 +561,17 @@
             <li class="project-card">
               <div class="project-card-wrapper">
                 <img
-                  src="./images/ourportfolio/onlinecourses.jpg"
+                  srcset="
+                    ./images/ourportfolio/onlinecourses-mobile.jpg    288w,
+                    ./images/ourportfolio/onlinecourses-mobile@2x.jpg 576w,
+                    ./images/ourportfolio/onlinecourses-tablet.jpg    356w,
+                    ./images/ourportfolio/onlinecourses-tablet@2x.jpg 712w,
+                    ./images/ourportfolio/onlinecourses.jpg           360w,
+                    ./images/ourportfolio/onlinecourses@2x.jpg        720w
+                  "
+                  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/ourportfolio/onlinecourses-mobile.jpg"
                   alt="onlinecourses"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -635,8 +691,7 @@
 
     <!--Backdrop with modal window-->
 
-    <div class="backdrop ">
-      is-open
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg
@@ -757,6 +812,99 @@
           <button class="leaving-data-button" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <!--Backdrop for mobile device  -->
+    <div class="mobile-menu">
+      is-open
+      <button class="close-mobile-menu-btn" type="button">
+        <svg
+          class="close-btn-icon"
+          width="8"
+          height="8"
+          aria-label="close icon"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-nav">
+        <ul class="menu-mobile-nav">
+          <li>
+            <a class="menu-mobile-nav-link current-link-mobile link" href=""
+              >Studio</a
+            >
+          </li>
+          <li><a class="menu-mobile-nav-link link" href="">Portfolio</a></li>
+          <li><a class="menu-mobile-nav-link link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <address>
+        <ul class="address-mobile-list list">
+          <li>
+            <a class="address-mobile-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="address-mobile-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <ul class="social-media-mobile-menu-list">
+        <li class="social-media-item">
+          <a class="social-media-link" href="./index.html">
+            <svg
+              class="social-media-icon"
+              width="24"
+              height="24"
+              aria-label="instagram icon"
+            >
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-link" href="./index.html">
+            <svg
+              class="social-media-icon"
+              width="24"
+              height="24"
+              aria-label="twitter icon"
+            >
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-link" href="./index.html">
+            <svg
+              class="social-media-icon"
+              width="24"
+              height="24"
+              aria-label="facebook icon"
+            >
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-link" href="./index.html">
+            <svg
+              class="social-media-icon"
+              width="24"
+              height="24"
+              aria-label="linkedin icon"
+            >
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
