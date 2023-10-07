@@ -101,18 +101,30 @@
       @media screen and (min-width: 768px){
 
         .main-footer-container {
-            display: inline-flex;
-            flex-wrap: wrap;
-            justify-content: center;
+          width: 574px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 24px;
+          row-gap: 72px;
           }
 
           .logo-footer-container {
-            margin-right: 24px;
+            margin-bottom: 0;
+        
+          }
+
+          .logotype-footer {
+            justify-content: flex-start;
           }
 
           .footer-text {
             max-width: 264px;
           }
+
+          .social-media-footer-container{
+            margin-bottom: 0;
+        }
 
           .footer-links{
             text-align: start;
