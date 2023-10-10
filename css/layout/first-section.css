@@ -9,7 +9,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/bg-mobile.jpg");
+    url("../../images/bg-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("/images/bg-mobile@2x.jpg");
+      url("../../images/bg-mobile@2x.jpg");
   }
 }
 
@@ -76,7 +76,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("/images/bg-tablet.jpg");
+      url("../../images/bg-tablet.jpg");
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -87,7 +87,7 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("/images/bg-tablet@2x.jpg");
+        url("../../images/bg-tablet@2x.jpg");
     }
   }
 
@@ -110,7 +110,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("/images/bg-image.jpg");
+      url("../../images/bg-image.jpg");
   }
 }
 
@@ -122,6 +122,6 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("/images/bg-image@2x.jpg");
+      url("../../images/bg-image@2x.jpg");
   }
 }
